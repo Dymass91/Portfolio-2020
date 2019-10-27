@@ -1,0 +1,217 @@
+
+  .Skills_section{
+    margin-top: 220px;
+      display: flex;
+      height: 620px;
+      background-color: rgb(43, 43, 48);
+      box-shadow: 0 0 25px 11px rgb(39, 39, 39);
+  }
+  .container {
+    width: 50%;
+    margin-top:40px;
+ 
+  }
+  .carousel {
+   height: 520px;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider {
+    display: flex;
+    height: 95%;
+    width: 400%;
+    transition: 0.8s;
+    
+  }
+  .slider section {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+  }
+ 
+  .left, .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 45px;
+    color: rgba(160, 160, 160, 0.295);
+  }
+  .arrow i{
+    transition: 0.5s;
+  }
+  .arrow i:hover {
+    -webkit-user-select: none;
+    color: #cfcfcf;
+    transition: 1s;
+  }
+  .left {
+    left: 7%;
+  }
+  .right {
+    right: 7%;
+    
+  }
+  .control ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: -4;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%);
+    z-index: 2;
+  }
+  .control ul li {
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border: 2px solid #333;
+    border-radius: 50px;
+    margin: 0 0 24px 18px;
+
+  }
+  .control ul li.selected {
+    transition: 0.5s;
+    background-color: rgb(13, 207, 255);
+    box-shadow: 0px 0px 6px rgb(118, 223, 255), 0 0 5px #0000FF, 0 0 5px #0000FF;
+  }
+
+
+  /* social divs */
+
+
+.front_end_icons{
+    display: flex;
+    width: 75%;
+    margin-top: 8%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.slider h2{
+    position: relative;
+    color: rgb(153, 153, 153);
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+     margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.slider .Work_Experience,.Soft_Skills_section h2{
+  margin-top: 5%;
+}
+
+ .front_end_icons i{
+     
+    color: rgb(2, 229, 236);
+    position: relative;
+    font-size: 45px;
+    padding:0px 18px 2px 18px;
+    transition: 0.5s;
+    margin-bottom: 2%;
+    text-shadow: 0px 0px 6px rgb(118, 223, 255), 0 0 5px #0000FF, 0 0 5px #0000FF;
+}
+
+
+.slider h1{
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    top: -2%;
+    color: rgb(86, 130, 143);  
+    font-size: 60px;
+   
+}
+
+.slider ul li {
+    position: relative;
+    text-align: justify;
+    font-size: 24px;
+    margin: 0 0% 3% 13.5%;
+    width: 100%;
+}
+.Work_Experience p{
+    font-size: 20px;
+    display: block;
+    width: 65%;
+}
+.front_end_icons i p{
+  font-size: 20px;
+    margin-top: 1px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+.front_end_icons i:hover p{
+    opacity: 1;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+.Work_Experience ul li {
+    margin-left: 19.5%;
+    width: 100%;
+}
+
+/* imaga slider */
+
+.carousel ul{
+    color: rgb(206, 206, 206);
+}
+
+
+.carousel ul li a:hover{
+    transition: ease-in 0.2s;
+    cursor: pointer;
+    color: rgb(2, 229, 236);
+    text-shadow: 0px 0px 6px rgb(118, 223, 255), 0 0 5px #0000FF, 0 0 5px 
+}
+
+.carousel ul li a {
+    transition: ease-in 0.2s;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+.Image_slider{
+    position: relative;
+    margin-top: 5%;
+    height: 70%;
+    width: 40vw;
+   margin-left: 2.3%;
+    border: 4px solid rgb(143, 143, 143);
+    box-shadow: 0 0 25px 11px rgb(31, 31, 31);
+    border-radius: 6px;
+    overflow: hidden;
+    
+}
+img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+ 
+}
+
+.fade{
+    opacity: 0;
+    animation: fadein 2.5s linear;
+}
+
+@keyframes fadein
+{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 1;}
+    
+}

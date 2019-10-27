@@ -1,0 +1,15 @@
+.Projects h2
+{
+ 
+    color: #fff;
+    margin-top: 120px;
+    font-size: 70px;
+text-align: inherit;
+width: 75%;
+margin-left: 50%;
+transform: translate(-50%);
+}
+.Projects
+{
+    height: 100vh;
+}
