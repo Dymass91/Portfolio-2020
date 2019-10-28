@@ -44,7 +44,7 @@ background-repeat: no-repeat;
      animation-delay: 2s;
      animation: animate1 6s linear forwards;
      z-index: 1;
-     transform: skewX(-8deg);;
+   
    }
   
  .header h1 span {

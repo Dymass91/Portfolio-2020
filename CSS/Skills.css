@@ -36,17 +36,19 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 45px;
+    font-size: 65px;
     color: rgba(160, 160, 160, 0.295);
   }
   .arrow i{
     transition: 0.5s;
   }
   .arrow i:hover {
-    -webkit-user-select: none;
+      -webkit-user-select: none;
     color: #cfcfcf;
-    transition: 1s;
+    text-shadow: 0 0 5px #dddddd, 0 0 10px #c5c5c5, 0 0 10px #c7c7c7;
+    transition: 0.2s;
   }
+  
   .left {
     left: 7%;
   }
