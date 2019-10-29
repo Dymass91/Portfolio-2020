@@ -2,7 +2,7 @@
   .Skills_section{
     margin-top: 220px;
       display: flex;
-      height: 620px;
+      height: 600px;
       background-color: rgb(43, 43, 48);
       box-shadow: 0 0 25px 11px rgb(39, 39, 39);
   }
@@ -184,7 +184,8 @@
 }
 .Image_slider{
     position: relative;
-    margin-top: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
     height: 70%;
     width: 40vw;
    margin-left: 2.3%;
