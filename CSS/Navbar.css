@@ -12,6 +12,11 @@
     top: 0;
     left: 0;
     z-index: 10;
+    opacity: 0;
+  }
+  .show {
+    opacity: 1;
+    transition: 1s;
   }
   .navbar a {
     text-decoration: none;

@@ -46,7 +46,7 @@
       -webkit-user-select: none;
     color: #cfcfcf;
     text-shadow: 0 0 5px #dddddd, 0 0 10px #c5c5c5, 0 0 10px #c7c7c7;
-    transition: 0.2s;
+    transition: 0.5s;
   }
   
   .left {
