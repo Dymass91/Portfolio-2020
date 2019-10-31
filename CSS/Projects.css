@@ -35,7 +35,7 @@ justify-content: center;
     width: 400px;
     height: 300px;
 }
-img:hover
+.single-img:hover
 {
     opacity: 0.5;
 }
