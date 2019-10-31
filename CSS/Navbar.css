@@ -16,7 +16,7 @@
   }
   .show {
     opacity: 1;
-    transition: 1s;
+    transition: 2s;
   }
   .navbar a {
     text-decoration: none;
