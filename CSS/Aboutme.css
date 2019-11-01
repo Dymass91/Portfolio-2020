@@ -1,7 +1,7 @@
 .Aboutme p{
     margin-top: 5%;
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
     width: 75%;
     text-align: inherit;
     margin-left: 50%;
@@ -9,11 +9,23 @@
 }
 .Aboutme h2
 {
-  color: #fff;
+  color: rgb(135, 143, 151);
   margin-top: 6%;
   font-size: 70px;
 text-align: inherit;
 width: 75%;
 margin-left: 50%;
 transform: translate(-50%);
+}
+.Aboutme h2:before
+{
+  content: '';
+  position: absolute;
+  left: -3%;
+  width: 30%;
+height: 105%;
+  background: rgb(255, 255, 255);
+  transform: skew(15deg);
+z-index: -1;
+
 }

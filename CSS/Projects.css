@@ -1,7 +1,6 @@
 .Projects h2
 {
- 
-    color: #fff;
+  color: rgb(135, 143, 151);
     margin-top: 6%;
     font-size: 70px;
 text-align: inherit;
@@ -9,6 +8,19 @@ width: 75%;
 margin-left: 50%;
 transform: translate(-50%);
 }
+.Projects h2:before
+{
+  content: '';
+  position: absolute;
+  left: -4%;
+  width: 30%;
+height: 105%;
+  background: rgb(255, 255, 255);
+  transform: skew(15deg);
+z-index: -1;
+
+}
+
 .Projects
 {
     height: 100vh;
@@ -19,7 +31,7 @@ transform: translate(-50%);
 }
 .img-area
 {
-    
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -34,8 +46,27 @@ justify-content: center;
     border-radius: 6px;
     width: 400px;
     height: 300px;
+    backface-visibility: hidden;
+    opacity: 1;
 }
-.single-img:hover
-{
-    opacity: 0.5;
-}
+
+
+.middle {
+  
+   position: absolute;
+   top: 5%;
+  }
+  
+  .single-img:hover {
+    opacity: 0.3;
+  }
+  
+ .imgtxt:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
