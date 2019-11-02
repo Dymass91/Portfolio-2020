@@ -1,7 +1,7 @@
 .Projects h2
 {
   color: rgb(135, 143, 151);
-    margin-top: 6%;
+    margin-top: 10%;
     font-size: 70px;
 text-align: inherit;
 width: 75%;
@@ -21,10 +21,6 @@ z-index: -1;
 
 }
 
-.Projects
-{
-    height: 100vh;
-}
 .wrapper
 {
     margin-top: 5%;
@@ -40,24 +36,58 @@ justify-content: center;
 }
 .single-img
 {
-   margin: 0 20px 40px;
-    border: 4px solid rgb(143, 143, 143);
-    box-shadow: 0 0 12px 6px rgb(102, 102, 102);
-    border-radius: 6px;
-    width: 400px;
-    height: 300px;
-    backface-visibility: hidden;
     opacity: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .wrapper .img-area .imgbox
 {
+    width: 400px;
+    height: 260px;
+    border: 4px solid rgb(143, 143, 143);
+    box-shadow: 0 0 12px 6px rgb(102, 102, 102);
     position: relative;
-    
+    overflow: hidden;
+    margin: 20px 20px 20px;
+    border-radius: 6px;
 }
 
 .wrapper .img-area .imgbox img
 {
-   max-width: 100%;
+   transition: 2s;
+}
+
+.wrapper .img-area .text
+{
    
+    position: absolute;
+    bottom: 0;
+   left: 0;
+    background: #4e686ed5;
+    width: 100%;
+    
+    line-height: 3em;
+}
+.wrapper .img-area .text a
+{
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+    display: inline;
+   margin-left: 25px;
+   color: #fff;
+}
+.wrapper .img-area .single-img:hover 
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+}
+.wrapper .img-area .text a:hover
+{
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 0 0 5px #dddddd, 0 0 10px #c5c5c5, 0 0 10px #c7c7c7;
+    transition: 0.5s;
 }
