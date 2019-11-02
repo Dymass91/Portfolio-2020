@@ -22,7 +22,7 @@ transform: translate(-50%);
   content: '';
   position: absolute;
   left: -3%;
-  width: 30%;
+  width: 360px;
 height: 105%;
   background: rgb(255, 255, 255);
   transform: skew(15deg);

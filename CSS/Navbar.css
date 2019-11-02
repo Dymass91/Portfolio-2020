@@ -1,6 +1,6 @@
 
   .navbar {
-    background-color: rgba(37, 42, 44, 0.418);
+    background-color:  #6c7479d5;
     color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.2);
     width: 100%;
@@ -13,6 +13,7 @@
     left: 0;
     z-index: 10;
     opacity: 0;
+    transition: 1s;
   }
   .show {
     opacity: 1;
