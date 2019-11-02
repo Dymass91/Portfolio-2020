@@ -29,3 +29,9 @@ height: 105%;
 z-index: -1;
 
 }
+.Aboutme p span
+{
+  color: rgb(140, 206, 247);
+  font-size: 40px;
+  font-weight: bold;
+}
