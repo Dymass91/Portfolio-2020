@@ -1,0 +1,16 @@
+footer
+{
+    margin-top: 5%;
+    position: relative;
+    height: 100px;
+    background-color: rgb(43, 43, 48);
+    box-shadow: 0 0 15px 5px rgb(39, 39, 39);
+}
+.info
+{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
