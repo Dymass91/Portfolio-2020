@@ -153,6 +153,7 @@
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
+
 .front_end_icons i:hover p{
     opacity: 1;
     cursor: pointer;
