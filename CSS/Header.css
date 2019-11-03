@@ -61,14 +61,14 @@ background-repeat: no-repeat;
      animation: animate2 6s linear forwards;
  }
 
-.box
+.boxArrow
 {
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.box a 
+.boxArrow a 
 {
   color: #c5c5c5;
   display: block;
@@ -77,18 +77,18 @@ background-repeat: no-repeat;
   animation: animate3 2s infinite;
   cursor: pointer;
 }
- .box a:nth-child(2)
+ .boxArrow a:nth-child(2)
  {
  
    animation-delay: -0.2s;
    transform:  translate(0,-20px);
  }
-.box a:nth-child(3)
+.boxArrow a:nth-child(3)
  {
    animation-delay: -0.4s;
  }
 
-.box a:hover
+.boxArrow a:hover
 {
   text-shadow: 0 0 10px #dddddd, 0 0 40px #c5c5c5, 0 0 80px #c7c7c7;
 }
