@@ -5,7 +5,7 @@ const slider = document.querySelector('.slider');
 
 const indicatorParent = document.querySelector('.control ul');
 const indicators = document.querySelectorAll('.control li');
-index = 0;
+let index = 0;
 let active = 0;
 
 ///////////IMAGE SLIDER/////////
@@ -30,9 +30,6 @@ const fadeIn = () => {
 
     }, 600)
 
-    // if (active === 0 || active === 3) {
-    //     document.querySelector('.slider_img').classList.remove('fade');
-    //  }
 }
 
 
