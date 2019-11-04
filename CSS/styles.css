@@ -21,15 +21,18 @@ body {
     height: 4px;
     margin-left: -76%;
     z-index: 2;
+    overflow: hidden;
   }
   .line2
   {
     position: absolute;
     background: white;
-    width: 100%;
+    width: 85%;
     height: 4px;
     margin-left: 15%;
     z-index: 2;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
-  
+ 
