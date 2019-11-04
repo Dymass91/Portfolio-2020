@@ -1,7 +1,6 @@
 .ContactSocial h2
 {
   color: rgb(135, 143, 151);
-    margin-bottom: 6%;
     margin-top: 10%;
     font-size: 70px;
 width: 75%;
@@ -34,6 +33,7 @@ z-index: -2;
 }
 .ContactSocial p
 {
+    margin-top: 6%;
     margin-bottom: 5%;
     color: #fff;
     font-size: 30px;
