@@ -1,13 +1,26 @@
-@media (max-width: 991px) {
-    .navbar ul {
-      padding: 0 10px;
+
+  @media (min-width: 280px) ,(max-width: 400px)
+  {
+    #Skills
+    {
+      position: absolute;
+      top: 200%;
     }
-    .navbar ul li a {
-      min-width: 100px;
-      padding: 0 20px;
+    
+    #box
+    {
+      position: absolute;
+      top: 90%;
+    }
+    .header h1
+    {
+        top: 8%;
+        position: absolute;
+        font-size: 20px;
+    
+      text-align: center;
     }
   }
-  
   @media (min-width: 400px) ,(max-width: 767px) {
 
     /*------------ General section ---------*/
@@ -24,7 +37,7 @@
     #Skills
     {
       position: absolute;
-      top: 170%;
+      top: 150%;
     }
     
     #box
@@ -55,7 +68,8 @@
     }
     .header #bg
     {
-        background-position-x: right ;
+        background-position: right bottom; 
+        background-size: auto;
     }
     /*------------ About section ---------*/
 
@@ -190,6 +204,7 @@ margin-bottom: 0;
     .wrapper .img-area .text a
     {
         font-size: 18px;
+        margin: 8px;
     }
     /*------------ Contact section ---------*/
 
@@ -344,3 +359,386 @@ margin-bottom: 0;
   font-size: 15px;
 }
   }
+
+  @media (min-width: 768px) ,(max-width: 1024px) {
+    .navbar ul {
+      padding: 0 10px;
+    }
+    .navbar ul li a {
+      min-width: 100px;
+      padding: 0 20px;
+    }
+     /*------------ Header ---------*/
+
+     .header h1
+     {
+         top: 7%;
+         position: absolute;
+         font-size: 58px;
+       text-align: center;
+     }
+     .header h1 span
+     {
+         bottom: 18%;
+         font-size: 18px;
+         right: 2%;
+     }
+     .header #bg
+     {
+         background-position: right;
+     }
+     /*------------ About section ---------*/
+ 
+     .Aboutme h2
+     {
+         font-size: 50px;
+     }
+     .Aboutme h2:before
+     {
+        width: 260px;
+        left: -6%;
+     }
+     .Aboutme h2:after
+     {
+        width: 305px;
+        left: -10%;
+     }
+     .Aboutme p
+     {
+         font-size: 1.5rem;
+     }
+     .Aboutme p span
+     {
+         font-size: 1.9rem;
+     }
+ 
+ /*------------ Skills  section ---------*/
+ 
+     .Skills_section{
+         margin-top: 90px;
+           display: flex;
+           height: 420px;
+           background-color: rgb(43, 43, 48);
+           box-shadow: 0 0 25px 11px rgb(39, 39, 39);
+       }
+ 
+       .Image_slider{
+         display: inline-block;
+         height: 60%;
+         left: 4%;
+     }
+     .slider section {
+         left: 50%;
+         width: 100%;
+         margin-top: -125px;
+       }
+       .container {
+         width: 50%;
+         margin-top: 20px;
+       }
+ 
+       
+ .front_end_icons{
+     width: 86%;
+     margin-top: 8%;
+ }
+ .front_end_icons i p 
+ {
+     font-size: 10px;
+ }
+ 
+ .slider h1
+     {
+ margin-top: 1%;
+ margin-bottom: 0;
+ 
+     }
+ .slider h2{
+     font-size: 16px;
+      margin-top: 2%;
+     margin-bottom: 5%;
+    
+ }
+ 
+ .front_end_icons i{
+      
+     color: rgb(2, 229, 236);
+     position: relative;
+     font-size: 22px;
+     padding:0px 14px 2px 18px;
+ 
+     margin-bottom: 2%;
+    
+ }
+ 
+ .slider h1{
+     top: -2%;
+     font-size: 40px;
+    
+ }
+ 
+ .left, .right {
+     font-size: 50px;
+     top: 37%;
+ }
+ .left {
+    left: 2%;
+  }
+  .right {
+    right: 2%;
+    
+  }
+ .slider ul li {
+     font-size: 16px;
+     margin: 0 0% 3% 19.5%;
+ }
+ .Work_Experience p
+ {
+     font-size: 14px;
+ }
+ 
+ .control ul
+ {
+    bottom: 26%;
+ }
+   .control ul li {
+       width: 12px;
+       height: 12px;
+   }
+ /*------------ Projects  section ---------*/
+ 
+     .Projects h2
+     {
+         font-size: 50px;
+     }
+     .Projects h2:before
+     {
+        width: 230px;
+        left: -6%;
+     }
+     .Projects h2:after
+     {
+        width: 275px;
+        left: -10%;
+     }
+     .wrapper .img-area .text p
+     {
+         font-size: 18px;
+     }
+     .wrapper .img-area .text a
+     {
+         font-size: 18px;
+         margin: 8px;
+     }
+     /*------------ Contact section ---------*/
+ 
+     .ContactSocial h2
+     {
+         font-size: 50px;
+     }
+     .ContactSocial h2:before
+     {
+        width: 230px;
+        left: -6%;
+     }
+     .ContactSocial h2:after
+     {
+        width: 275px;
+        left: -10%;
+     }
+     .ContactSocial p
+     {
+         font-size: 20px;
+     }
+    
+       .ContactSocial  ul li a
+       {
+           font-size: 35px;
+           width: 50px;
+           height: 50px;
+           line-height: 52px;
+           text-align: center;
+           margin: -12px
+       }
+      
+       .Contact .box 
+       {
+         width: 300px;
+         height: 50px;
+         margin-bottom: 8px;
+       }
+       .Contact .box .details
+       {
+         transform: translateY(-50px) rotateX(90deg);
+       }
+       .Contact .box .icon i
+       {
+           font-size: 2em;
+           line-height: 50px;
+       }
+       .Contact .box .details h3
+       {
+         line-height: 50px;
+       }
+       /* ------ Navbar section -------- */
+ 
+     .navbar {
+       padding: 0;
+     }
+     .navbar ul {
+       width: 100%;
+       padding: 0;
+       background-color:  #6c7479d5;
+       height: 100vh;
+       max-height: 0;
+       overflow: hidden;
+       transition: all ease-in-out 0.3s;
+     }
+     .navbar ul.open {
+       max-height: 100vh;
+     }
+     .navbar ul li {
+       width: 100%;
+   
+     }
+     .navbar ul li a {
+       padding: 0;
+     }
+     .navbar .navbar-toggler {
+       display: block;
+       position: absolute;
+       height: 40px;
+       top: 20px;
+       right: 20px;
+       background-color: transparent;
+       color: #fff;
+       border: 3px solid #fff;
+    
+       outline: none;
+       padding: 0 5px;
+       cursor: pointer;
+     }
+     .navbar .navbar-toggler span,
+     .navbar .navbar-toggler span::before,
+     .navbar .navbar-toggler span::after {
+       display: block;
+       content: '';
+       background-color: #fff;
+       height: 3px;
+       width: 28px;
+       border-radius: 4px;
+       transition: all ease-in-out 0.3s;
+     }
+     .navbar .navbar-toggler span::before {
+       transform: translateY(-8px);
+     }
+     .navbar .navbar-toggler span::after {
+       transform: translateY(5px);
+     }
+     
+     .navbar .navbar-toggler.open-navbar-toggler span {
+       
+       background-color: transparent;
+        
+     }
+     .navbar .navbar-toggler.open-navbar-toggler span::before {
+       transform: translateY(0px) rotate(45deg);
+ 
+     }
+     .navbar .navbar-toggler.open-navbar-toggler span::after {
+       transform: translateY(-3px) rotate(-45deg);
+       
+     }
+     .navbar a.navbar-brand{
+         font-size: 14px;
+         margin-left: 2%;
+     }
+     .navbar a.navbar-brand span{
+         font-size: 18px;
+     }
+     .navbar a.navbar-brand .navbar_small_span
+     {
+         font-size: 10px;
+         left: -45%;
+     }
+ 
+     /*------------Footer  section ---------*/
+ 
+     footer
+ {
+     margin-top: 5%;
+     position: relative;
+     height: 70px;
+     background-color: rgb(43, 43, 48);
+     box-shadow: 0 0 15px 5px rgb(39, 39, 39);
+ }
+ .info
+ {
+     text-align: center;
+     font-size: 15px;
+     width: 100%;
+ }
+ .info span
+ {
+   font-size: 15px;
+ }
+ @media (min-width: 768px) ,(max-width: 1024px) 
+ {
+    .header #bg
+    {
+        background-position: right;
+        background-size: cover;
+    }
+    .header h1
+     {
+         top: 7%;
+         position: absolute;
+         font-size: 81px;
+       text-align: center;
+     }
+     .Projects h2
+     {
+         font-size: 50px;
+     }
+     .Projects h2:before
+     {
+        width: 250px;
+        left: -6%;
+     }
+     .Projects h2:after
+     {
+        width: 305px;
+        left: -10%;
+     }
+     .Aboutme h2
+     {
+         font-size: 50px;
+     }
+     .Aboutme h2:before
+     {
+        width: 280px;
+        left: -6%;
+     }
+     .Aboutme h2:after
+     {
+        width: 345px;
+        left: -10%;
+     }
+     .ContactSocial h2
+     {
+         font-size: 50px;
+     }
+     .ContactSocial h2:before
+     {
+        width: 250px;
+        left: -6%;
+     }
+     .ContactSocial h2:after
+     {
+        width: 305px;
+        left: -10%;
+     }
+ }
+
+   }
+  
