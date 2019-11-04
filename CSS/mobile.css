@@ -693,7 +693,7 @@ margin-bottom: 0;
      {
          top: 7%;
          position: absolute;
-         font-size: 81px;
+         font-size: 70px;
        text-align: center;
      }
      .Projects h2
@@ -716,12 +716,12 @@ margin-bottom: 0;
      }
      .Aboutme h2:before
      {
-        width: 280px;
+        width: 270px;
         left: -6%;
      }
      .Aboutme h2:after
      {
-        width: 345px;
+        width: 305px;
         left: -10%;
      }
      .ContactSocial h2
