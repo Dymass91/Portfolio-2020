@@ -21,7 +21,7 @@
       text-align: center;
     }
   }
-  @media (min-width: 400px) ,(max-width: 767px) {
+  @media (min-width: 360px) ,(max-width: 767px) {
 
     /*------------ General section ---------*/
     .line1
@@ -361,6 +361,7 @@ margin-bottom: 0;
   }
 
   @media (min-width: 768px) ,(max-width: 1024px) {
+      
     .navbar ul {
       padding: 0 10px;
     }

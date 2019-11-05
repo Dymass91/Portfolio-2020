@@ -12,13 +12,13 @@ body {
     box-sizing: border-box;
  font-family: 'Baumans', cursive;
   }
-  
+  @media (min-width: 360px), (max-width: 767px){
  .line1
   {
     position: absolute;
     background: white;
     width: 100%;
-    height: 4px;
+    height: 2px;
     margin-left: -76%;
     z-index: 2;
     overflow: hidden;
@@ -28,11 +28,38 @@ body {
     position: absolute;
     background: white;
     width: 85%;
-    height: 4px;
+    height: 2px;
     margin-left: 15%;
     z-index: 2;
     overflow: hidden;
     box-sizing: border-box;
   }
+}
+  @media (min-width: 768px) {
 
- 
+    /*------------ General section ---------*/
+    .line1
+    {
+        height: 4px;
+    }
+    .line2
+    {
+        height: 4px;
+    }
+    #Skills
+    {
+      position: absolute;
+      top: 150%;
+    }
+    
+    #box
+    {
+      position: absolute;
+      top: 90%;
+    }
+    #Contact
+    {
+        position: absolute;
+      top: 480%;
+    }
+  }

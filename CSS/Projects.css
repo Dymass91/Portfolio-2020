@@ -1,8 +1,9 @@
+@media (min-width: 360px), (max-width: 767px){
 .Projects h2
 {
   color: rgb(135, 143, 151);
     margin-top: 10%;
-    font-size: 70px;
+    font-size: 30px;
 text-align: inherit;
 width: 75%;
 margin-left: 50%;
@@ -12,8 +13,8 @@ transform: translate(-50%);
 {
   content: '';
   position: absolute;
-  left: -47px;
-  width: 340px;
+  left: -6%;
+  width: 140px;
 height: 105%;
   background: rgb(255, 255, 255);
   transform: skew(15deg);
@@ -24,8 +25,8 @@ z-index: -1;
 {
   content: '';
   position: absolute;
-  left: -63px;
-  width: 370px;
+  left: -10.5%;
+  width: 165px;
 height: 105%;
   background: rgb(174, 205, 228);
   transform: skew(15deg);
@@ -79,16 +80,16 @@ justify-content: center;
 {
     text-decoration: none;
     position: relative;
-    font-size: 25px;
+    font-size: 18px;
     display: inline;
-   margin-left: 25px;
+   margin-left: 8px;
    color: #fff;
 }
 .wrapper .img-area .text p
 {
     text-decoration: none;
     position: relative;
-    font-size: 22px;
+    font-size: 18px;
     float: right;
   margin-right: 10px;
    color:  rgb(255, 255, 255);
@@ -107,4 +108,31 @@ justify-content: center;
    transition: 1.5s;
    transform: scale(1.05);
    opacity: 1;
+}
+}
+@media (min-width: 768px)
+{
+  .Projects h2
+    {
+        font-size: 70px;
+    }
+    .Projects h2:before
+    {
+       width: 350px;
+       left: -53px;
+    }
+    .Projects h2:after
+    {
+       width: 380px;
+       left: -67.5px;
+    }
+    .wrapper .img-area .text p
+    {
+        font-size: 22px;
+    }
+    .wrapper .img-area .text a
+    {
+        font-size: 25px;
+        margin-left: 25px;
+    }
 }
