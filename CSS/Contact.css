@@ -35,8 +35,8 @@ z-index: -2;
 }
 .ContactSocial p
 {
-    margin-top: 6%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 12%;
     color: #fff;
     font-size: 20px;
     width: 75%;
@@ -64,7 +64,7 @@ box-sizing: border-box;
 text-align: center;
 justify-items: center;
 background: darkgray;
-margin-bottom: 8px;
+margin-bottom: 22px;
     box-shadow: 0 0 12px 6px rgb(102, 102, 102);
 }
 
