@@ -196,6 +196,7 @@ background-repeat: no-repeat;
   color: #4e686e;
    background: #d8d8d8;
    box-shadow: 0 0 10px #dddddd, 0 0 40px #c5c5c5, 0 0 80px #c7c7c7;
+   transform: rotate(0deg);
   }
   .header h1 .logospan
   {
