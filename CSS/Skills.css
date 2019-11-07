@@ -124,7 +124,7 @@ top: 35%;
      
     color: rgb(2, 229, 236);
     position: relative;
-    font-size: 33px;
+    font-size: 30px;
     padding:0px 14px 2px 18px;
     transition: 0.5s;
     margin-bottom: 2%;
@@ -220,6 +220,7 @@ img{
     
 }
 }
+
 @media (min-width: 768px)
 {
   .Skills_section{
@@ -234,7 +235,7 @@ img{
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
-    height: 70%;
+    height: 65%;
     width: 40vw;
    margin-left: 2.3%;
     border: 4px solid rgb(143, 143, 143);
@@ -257,7 +258,7 @@ img{
   
 .front_end_icons{
 width: 75%;
-margin-top: 8%;
+margin-top: 38%;
 }
 .front_end_icons i p 
 {
@@ -266,14 +267,19 @@ font-size: 20px;
 
 .slider h1
 {
-margin-top: 1%;
+margin-top: -5%;
 margin-bottom: 0;
 font-size: 45px;
 }
 .slider h2{
+  margin-top: 8%;
   font-size: 26px;
 }
-
+.slider .front_end_icons h2{
+  margin-top: -2%;
+  margin-bottom: 4%;
+  font-size: 26px;
+}
 .front_end_icons i{
   color: rgb(2, 229, 236);
   position: relative;
@@ -296,19 +302,87 @@ font-size: 45px;
 }
 .slider ul li {
   font-size: 24px;
-  margin: 0 0% 3% 13.5%;
+  margin: 0 0% 3% 17.5%;
+}
+.slider ul
+{
+  margin-bottom: -40%;
 }
 .Work_Experience p
 {
 font-size: 20px;
 }
-
+.Work_Experience ul
+{
+  margin-top: -3%;
+font-size: 20px;
+}
+.Work_Experience h2
+{
+  margin-top: -11%;
+}
 .control ul
 {
-bottom: 4%;
+bottom: -4%;
 }
 .control ul li {
   width: 15px;
   height: 15px;
+}
+}
+
+@media (min-width: 768px), (max-width: 880px)
+{
+  .Image_slider{
+    display: none;
+  }
+  img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-origin: border-box;
+      background-position: center;
+   
+  }
+
+  
+.front_end_icons{
+  display: flex;
+  width: 75%;
+  margin-top: 38%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.container {
+  width: 100%;
+  margin-top: 20px;
+
+}
+.slider h2{
+  position: relative;
+  font-size: 28px;
+   margin-top: 20%;
+  margin-bottom: 5%;
+  margin-left: 50%;
+  transform: translate(-50%);
+
+}
+.slider .Work_Experience,.Soft_Skills_section h2{
+margin-top: 5%;
+}
+.Work_Experience h2
+{
+  margin-top: -7%;
+}
+.front_end_icons i{
+  font-size: 50px;
+  padding:0px 14px 2px 18px;
+  margin-bottom: 2%;
+
 }
 }
