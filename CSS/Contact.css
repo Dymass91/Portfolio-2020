@@ -184,7 +184,10 @@ z-index: -1;
 }
 .ContactSocial p
 {
-    font-size: 30px;
+  margin-top: 7%;
+  margin-bottom: 5%;
+    font-size: 34px;
+    width: 65%;
 }
 .ContactSocial h2:before
 {

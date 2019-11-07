@@ -34,6 +34,11 @@ body {
     overflow: hidden;
     box-sizing: border-box;
   }
+  #Skills
+    {
+      position: absolute;
+      margin-top: -55%;
+    }
 }
   @media (min-width: 768px) {
 
@@ -49,7 +54,7 @@ body {
     #Skills
     {
       position: absolute;
-      top: 150%;
+      margin-top: -5%;
     }
     
     #box
