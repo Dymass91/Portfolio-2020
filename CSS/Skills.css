@@ -1,11 +1,11 @@
 
-@media (min-width: 360px),  (max-width: 767px)
+@media (min-width: 360px) ,  (max-width: 767px)
 {
 
   .Skills_section{
     margin-top: 90px;
       display: flex;
-      height: 340px;
+      height: 360px;
       background-color: rgb(43, 43, 48);
       box-shadow: 0 0 25px 11px rgb(39, 39, 39);
   }
@@ -66,7 +66,7 @@ top: 35%;
     list-style: none;
     display: flex;
     position: absolute;
-    bottom: 37%;
+    bottom: 34%;
     left: 50%;
     padding: 0;
     transform: translate(-50%);
@@ -221,7 +221,7 @@ img{
 }
 }
 
-@media (min-width: 768px)
+@media (min-width: 768px) 
 {
   .Skills_section{
     margin-top: 220px;
@@ -331,7 +331,7 @@ bottom: -4%;
 }
 }
 
-@media (min-width: 768px), (max-width: 880px)
+@media (min-width: 768px) and (max-width: 880px)
 {
   .Image_slider{
     display: none;
@@ -380,9 +380,9 @@ margin-top: 5%;
   margin-top: -7%;
 }
 .front_end_icons i{
-  font-size: 50px;
+  font-size: 38px;
   padding:0px 14px 2px 18px;
   margin-bottom: 2%;
 
 }
-}
+}*/
