@@ -39,6 +39,11 @@ body {
       position: absolute;
       margin-top: -55%;
     }
+    #box
+    {
+      position: absolute;
+      top: 110%;
+    }
 }
   @media (min-width: 768px) {
 
