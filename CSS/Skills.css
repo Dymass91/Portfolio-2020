@@ -220,6 +220,30 @@ img{
     
 }
 }
+@media (max-width: 359px) 
+{
+  .front_end_icons{
+    display: flex;
+    width: 76%;
+    margin-top: 8%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .front_end_icons i{
+    font-size: 24px;
+  }
+  .slider h2
+  {
+    bottom: -6px;
+  }
+  .slider .Work_Experience,.Soft_Skills_section,.Courses_Certyficates h2{
+    margin-top: -7%;
+  }
+  }
+
 
 @media (min-width: 768px) 
 {
