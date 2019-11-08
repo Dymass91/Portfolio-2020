@@ -28,7 +28,7 @@ z-index: -1;
   left: -10.5%;
   width: 165px;
 height: 105%;
-  background: rgb(174, 205, 228);
+  background: var(--main-color);
   transform: skew(15deg);
 z-index: -2;
 

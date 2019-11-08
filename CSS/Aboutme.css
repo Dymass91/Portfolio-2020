@@ -35,7 +35,7 @@ z-index: -1;
   content: '';
   position: absolute;
 height: 106%;
-  background: rgb(174, 205, 228);
+  background: var(--main-color);
   transform: skew(15deg);
 z-index: -2;
 width: 185px;
@@ -43,7 +43,7 @@ left: -10%;
 }
 .Aboutme p span
 {
-  color: rgb(140, 206, 247);
+  color: var(--span-color);
   font-size: 1.2rem;
   font-weight: bold;
 }

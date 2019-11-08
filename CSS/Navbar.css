@@ -1,3 +1,5 @@
+
+
 .navbar {
   background-color:  #6c7479d5;
   color: #fff;
@@ -79,9 +81,24 @@
   position: absolute;
   top: 90%;
 }
+@media (max-width: 460px){
+  .navbar a.navbar-brand{
+  font-size: 16px;
+  margin-left: -3%;
+  margin-top: -2%;
+}
+.navbar a.navbar-brand span{
+  font-size: 20px;
+}
+.navbar a.navbar-brand .navbar_small_span
+{
+  display: block;
+  font-size: 11px;
+  margin-top: -42%;
+  left: 19%;
+}}
 
-
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
   .navbar ul {
     padding: 0 10px;
   }
@@ -91,7 +108,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar {
     padding: 0;
   }

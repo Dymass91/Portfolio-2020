@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    --main-color: rgb(174, 204, 228);
+    --span-color: rgb(100, 211, 255);
 }
 
 body {
@@ -37,7 +39,7 @@ body {
   #Skills
     {
       position: absolute;
-      margin-top: -55%;
+      margin-top: -115%;
     }
     #box
     {
