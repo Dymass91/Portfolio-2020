@@ -76,11 +76,7 @@
   top: 200%;
 }*/
 
-#box
-{
-  position: absolute;
-  top: 90%;
-}
+
 @media (max-width: 460px){
   .navbar a.navbar-brand{
   font-size: 16px;

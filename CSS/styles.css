@@ -36,15 +36,10 @@ body {
     overflow: hidden;
     box-sizing: border-box;
   }
-  /* #Skills
-    {
-      position: absolute;
-      margin-top: -115%;
-    }*/
     #box
     {
       position: absolute;
-      top: 110%;
+      top: 100%;
     }
 }
   @media (min-width: 768px) {
@@ -63,12 +58,12 @@ body {
       position: absolute;
       margin-top: 5%;
     }
-    
     #box
-    {
-      position: absolute;
-      top: 100%;
-    }
+{
+  position: absolute;
+  top: 90%;
+}
+    
     #Contact
     {
         position: absolute;
