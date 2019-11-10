@@ -76,7 +76,7 @@ top: 35%;
     width: 12px;
     height: 12px;
     background: #333;
-    border: 2px solid #333;
+    border: 2px solid var(--span-color);
     border-radius: 50px;
     margin: 0 0 24px 18px;
 
@@ -205,9 +205,9 @@ img{
     background-position: center;
 }
 
-.fade{
+.fadein{
     opacity: 0;
-    animation: fadein 2.5s linear;
+   animation: fadein 2s ease-in-out;
 }
 
 @keyframes fadein
@@ -215,9 +215,9 @@ img{
     0%{opacity: 0;}
     25%{opacity: 1;}
     75%{opacity: 1;}
-    100%{opacity: 1;}
-    
+    100%{opacity: 1;} 
 }
+
 }
 @media (max-width: 359px) 
 {
@@ -346,7 +346,7 @@ font-size: 20px;
 }
 .control ul
 {
-bottom: -4%;
+bottom: -3.5%;
 }
 .control ul li {
   width: 15px;

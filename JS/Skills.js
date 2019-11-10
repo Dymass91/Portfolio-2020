@@ -9,6 +9,7 @@ let index = 0;
 let active = 0;
 
 ///////////IMAGE SLIDER/////////
+
 const slideList = [
     { img: "img/img1.jpg" },
     { img: "img/img2.jpg" },
@@ -16,20 +17,21 @@ const slideList = [
     { img: "img/img4.jpg" }
 ];
 
+/////   simply image slider ///
+
 const image = document.querySelector('img.slider_img');
 
 const changeSlide = () => {
     image.src = slideList[active].img;
 }
 
+///// fade in and out funtion for image slider /////
 
 const fadeIn = () => {
-    document.querySelector('.slider_img').classList.add('fade');
+    document.querySelector('.slider_img').classList.add('fadein');
     setTimeout(() => {
-        document.querySelector('.slider_img').classList.remove('fade');
-
+        document.querySelector('.slider_img').classList.remove('fadein');
     }, 600)
-
 }
 
 
@@ -40,14 +42,16 @@ const fadeIn = () => {
 indicators.forEach((indicator, i) => {
     indicator.addEventListener('click', () => {
 
+        ///// position dots ////
+
         document.querySelector('.control .selected').classList.remove('selected');
         indicator.classList.add('selected');
         slider.style.transform = 'translateX(' + (i) * -25 + '%)';
         index = i;
-
-        changeSlide()
     });
 });
+
+///// function to slide slider in left side
 
 left.addEventListener('click', () => {
     index = (index > 0) ? index - 1 : 0;
@@ -55,9 +59,13 @@ left.addEventListener('click', () => {
     indicatorParent.children[index].classList.add('selected');
     slider.style.transform = 'translateX(' + (index) * -25 + '%)';
     active = index;
+
     fadeIn()
     changeSlide()
 });
+
+///// function to slide slider in right side
+
 
 right.addEventListener('click', () => {
     index = (index < 4 - 1) ? index + 1 : 3;
