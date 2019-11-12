@@ -75,3 +75,17 @@ left: -10%;
         font-size: 40px;
     }
 }
+
+@media (max-width: 830px) and (orientation:landscape)
+{
+  .Aboutme h2:before
+  {
+ 
+     left: -17px;
+  }
+  .Aboutme h2:after
+  {
+    left: -30px;
+
+  }
+}
