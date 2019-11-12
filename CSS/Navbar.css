@@ -175,3 +175,26 @@
     /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
   }
 }
+
+
+@media (max-width: 830px) and (orientation:landscape)
+{
+  .navbar a.navbar-brand{
+    font-size: 16px;
+    margin-left: -3%;
+    margin-top: -1%;
+  }
+  .navbar a.navbar-brand span{
+    font-size: 20px;
+  }
+  .navbar a.navbar-brand .navbar_small_span
+  {
+    display: block;
+    font-size: 11px;
+    margin-top: -42%;
+    left: 19%;
+  }
+
+.navbar{
+  font-size: 16px;
+}}
