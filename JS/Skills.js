@@ -11,10 +11,10 @@ let active = 0;
 ///////////IMAGE SLIDER/////////
 
 const slideList = [
-    { img: "img/img1.jpg" },
-    { img: "img/img2.jpg" },
-    { img: "img/img3.jpg" },
-    { img: "img/img4.jpg" }
+    { img: "IMG/img1.jpg" },
+    { img: "IMG/img2.jpg" },
+    { img: "IMG/img3.jpg" },
+    { img: "IMG/img4.jpg" }
 ];
 
 /////   simply image slider ///
