@@ -19,7 +19,7 @@ const slideList = [
 
 /////   simply image slider ///
 
-const image = document.querySelector('IMG.slider_img');
+const image = document.querySelector('img.slider_img');
 
 const changeSlide = () => {
     image.src = slideList[active].img;
@@ -44,10 +44,12 @@ indicators.forEach((indicator, i) => {
 
         ///// position dots ////
 
+        index = i;
+
         document.querySelector('.control .selected').classList.remove('selected');
         indicator.classList.add('selected');
         slider.style.transform = 'translateX(' + (i) * -25 + '%)';
-        index = i;
+
     });
 });
 
