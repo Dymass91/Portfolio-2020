@@ -209,6 +209,10 @@ img{
     opacity: 0;
    animation: fadein 2s ease-in-out;
 }
+.fadeoff{
+  opacity: 1;
+  animation: fadein 2s ease-in-out;
+}
 
 @keyframes fadein
 {

@@ -62,6 +62,7 @@ left.addEventListener('click', () => {
     slider.style.transform = 'translateX(' + (index) * -25 + '%)';
     active = index;
 
+
     fadeIn()
     changeSlide()
 });
@@ -75,10 +76,16 @@ right.addEventListener('click', () => {
     indicatorParent.children[index].classList.add('selected');
     slider.style.transform = 'translateX(' + (index) * -25 + '%)';
     active = index;
+
     fadeIn()
+    if (index === slideList.length - 1) {
+        console.log("ma sens2");
+        document.querySelector('.slider_img').classList.remove('fadein');
+    }
+
+
     changeSlide()
 });
-
 
 ////////END of Section Slider////////////
 
