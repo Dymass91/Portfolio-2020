@@ -10,28 +10,31 @@ let active = 0;
 
 ///////////IMAGE SLIDER/////////
 
-const slideList = [
-    { img: "IMG/img1.jpg" },
-    { img: "IMG/img2.jpg" },
-    { img: "IMG/img3.jpg" },
-    { img: "IMG/img4.jpg" }
-];
-
-/////   simply image slider ///
 
 const image = document.querySelector('img.slider_img');
 
-const changeSlide = () => {
-    image.src = slideList[active].img;
+const fadeIn = () => {
+    document.querySelector('.slider_img').classList.add('fade');
+    setTimeout(() => {
+        document.querySelector('.slider_img').classList.remove('fade');
+
+    }, 800)
+
+    // if (active === 0 || active === 3) {
+    //     document.querySelector('.slider_img').classList.remove('fade');
+    //  }
 }
 
-///// fade in and out funtion for image slider /////
+const slideList = [
+    { img: "img/img1.jpg" },
+    { img: "img/img2.jpg" },
+    { img: "img/img3.jpg" },
+    { img: "img/img4.jpg" }
+];
 
-const fadeIn = () => {
-    document.querySelector('.slider_img').classList.add('fadein');
-    setTimeout(() => {
-        document.querySelector('.slider_img').classList.remove('fadein');
-    }, 600)
+const changeSlide = () => {
+    image.src = slideList[active].img;
+    fadeIn()
 }
 
 
@@ -42,18 +45,16 @@ const fadeIn = () => {
 indicators.forEach((indicator, i) => {
     indicator.addEventListener('click', () => {
 
-        ///// position dots ////
-
-        index = i;
-
         document.querySelector('.control .selected').classList.remove('selected');
         indicator.classList.add('selected');
         slider.style.transform = 'translateX(' + (i) * -25 + '%)';
+        index = i;
+        active = index;
 
+        changeSlide()
+        console.log('indicator')
     });
 });
-
-///// function to slide slider in left side
 
 left.addEventListener('click', () => {
     index = (index > 0) ? index - 1 : 0;
@@ -62,13 +63,22 @@ left.addEventListener('click', () => {
     slider.style.transform = 'translateX(' + (index) * -25 + '%)';
     active = index;
 
-
-    fadeIn()
+    if (active <= 0) {
+        left.style.display = 'none'
+        left.style.cursor = 'auto';
+        console.log('remove left')
+    }
+    else if (active >= 0) {
+        right.style.display = 'block'
+        right.style.opacity = '1'
+        right.style.cursor = 'pointer';
+        right.style.transition = '1'
+        console.log('display right')
+    }
     changeSlide()
+
+    console.log(active)
 });
-
-///// function to slide slider in right side
-
 
 right.addEventListener('click', () => {
     index = (index < 4 - 1) ? index + 1 : 3;
@@ -77,15 +87,25 @@ right.addEventListener('click', () => {
     slider.style.transform = 'translateX(' + (index) * -25 + '%)';
     active = index;
 
-    fadeIn()
-    if (index === slideList.length - 1) {
-        console.log("ma sens2");
-        document.querySelector('.slider_img').classList.remove('fadein');
+    if (active === 3) {
+        right.style.display = 'none'
+        right.style.opacity = '0.3'
+        right.style.cursor = 'auto';
+        console.log('remove right')
     }
-
-
+    else if (active <= 3) {
+        left.style.display = 'block'
+        left.style.opacity = '1'
+        left.style.cursor = 'pointer';
+        console.log('display left')
+    }
     changeSlide()
+    console.log(active)
 });
 
+
+
 ////////END of Section Slider////////////
+
+
 
