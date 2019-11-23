@@ -65,14 +65,10 @@ left.addEventListener('click', () => {
 
     if (active <= 0) {
         left.style.display = 'none'
-        left.style.cursor = 'auto';
         console.log('remove left')
     }
     else if (active >= 0) {
         right.style.display = 'block'
-        right.style.opacity = '1'
-        right.style.cursor = 'pointer';
-        right.style.transition = '1'
         console.log('display right')
     }
     changeSlide()
@@ -89,14 +85,10 @@ right.addEventListener('click', () => {
 
     if (active === 3) {
         right.style.display = 'none'
-        right.style.opacity = '0.3'
-        right.style.cursor = 'auto';
         console.log('remove right')
     }
     else if (active <= 3) {
         left.style.display = 'block'
-        left.style.opacity = '1'
-        left.style.cursor = 'pointer';
         console.log('display left')
     }
     changeSlide()
