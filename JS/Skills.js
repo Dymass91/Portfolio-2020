@@ -11,7 +11,7 @@ let active = 0;
 ///////////IMAGE SLIDER/////////
 
 
-const image = document.querySelector('IMG.slider_img');
+const image = document.querySelector('img.slider_img');
 
 const fadeIn = () => {
     document.querySelector('.slider_img').classList.add('fade');
