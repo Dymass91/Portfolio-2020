@@ -64,12 +64,12 @@ left.addEventListener('click', () => {
     active = index;
 
     if (active <= 0) {
-        left.style.display = 'none'
-        console.log('remove left')
+        left.classList.add('arrow__display-none');
+        left.classList.remove('arrow__display-block')
     }
     else if (active >= 0) {
-        right.style.display = 'block'
-        console.log('display right')
+        right.classList.add('arrow__display-block');
+        right.classList.remove('arrow__display-none');
     }
     changeSlide()
 
@@ -84,15 +84,14 @@ right.addEventListener('click', () => {
     active = index;
 
     if (active === 3) {
-        right.style.display = 'none'
-        console.log('remove right')
+        right.classList.add('arrow__display-none');
+        right.classList.remove('arrow__display-block')
     }
     else if (active <= 3) {
-        left.style.display = 'block'
-        console.log('display left')
+        left.classList.add('arrow__display-block');
+        left.classList.remove('arrow__display-none')
     }
     changeSlide()
-    console.log(active)
 });
 
 

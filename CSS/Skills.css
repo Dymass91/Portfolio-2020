@@ -57,6 +57,7 @@ top: 35%;
   
   .left {
     left: 3%;
+    opacity: 0.3;
   }
   .right {
     right: 3%;
@@ -209,8 +210,15 @@ img{
     opacity: 0;
    animation: fadein 2s ease-in-out;
 }
-
-
+.arrow__display-none
+{
+ 
+  animation: Displaynone 1.5s forwards;
+}
+.arrow__display-block
+{
+  animation: Displayblock 1.5s forwards;
+}
 @keyframes fadein
 {
     0%{opacity: 0;}
@@ -218,7 +226,24 @@ img{
     75%{opacity: 1;}
     100%{opacity: 1;} 
 }
-
+@keyframes Displaynone
+{
+    0%{opacity: 1;}
+    30%{opacity: 1;}
+    100%{
+      opacity: 0;
+      display: none;
+      cursor: auto;
+      } 
+}
+@keyframes Displayblock
+{
+    0%{opacity: 0;}
+    30%{opacity: 0.5;}
+    100%{
+      opacity: 1;
+      } 
+}
 }
 @media (max-width: 359px) 
 {
@@ -319,10 +344,16 @@ font-size: 45px;
   margin-top: 1%;
   margin-bottom: 0;
 }
-
+.left{
+margin-left: 4%;
+}
+.right
+{
+  margin-right: 4%;
+}
 .left, .right {
   top: 50%;
-    font-size: 65px;
+    font-size: 72px;
 }
 .slider ul li {
   font-size: 24px;
