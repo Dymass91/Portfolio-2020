@@ -57,7 +57,6 @@ top: 35%;
   
   .left {
     left: 3%;
-    opacity: 0.3;
   }
   .right {
     right: 3%;
@@ -219,6 +218,12 @@ img{
 {
   animation: Displayblock 1.5s forwards;
 }
+.unactive{
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s;
+}
+
 @keyframes fadein
 {
     0%{opacity: 0;}
