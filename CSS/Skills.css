@@ -5,7 +5,7 @@
   .Skills_section{
     margin-top: 90px;
       display: flex;
-      height: 360px;
+      height: 400px;
       background-color: rgb(43, 43, 48);
       box-shadow: 0 0 25px 11px rgb(39, 39, 39);
   }
@@ -15,7 +15,7 @@
  
   }
   .carousel {
-   height: 520px;
+   height: 570px;
     overflow: hidden;
     position: relative;
   }
@@ -139,7 +139,7 @@ top: 35%;
     text-align: center;
     margin-top: 1%;
     margin-bottom: 0;
-    top: -2%;
+    top: 1%;
     color: rgb(92, 186, 230);  
     font-size: 35px;
 }
@@ -209,21 +209,15 @@ img{
     opacity: 0;
    animation: fadein 2s ease-in-out;
 }
-.arrow__display-none
-{
- 
-  animation: Displaynone 1.5s forwards;
-}
-.arrow__display-block
-{
-  animation: Displayblock 1.5s forwards;
-}
 .unactive{
   pointer-events: none;
   opacity: 0;
   transition: 1s;
 }
-
+.active{
+  opacity: 1;
+  transition: 1s;
+}
 @keyframes fadein
 {
     0%{opacity: 0;}
@@ -231,25 +225,8 @@ img{
     75%{opacity: 1;}
     100%{opacity: 1;} 
 }
-@keyframes Displaynone
-{
-    0%{opacity: 1;}
-    30%{opacity: 1;}
-    100%{
-      opacity: 0;
-      display: none;
-      cursor: auto;
-      } 
-}
-@keyframes Displayblock
-{
-    0%{opacity: 0;}
-    30%{opacity: 0.5;}
-    100%{
-      opacity: 1;
-      } 
-}
-}
+
+
 @media (max-width: 359px) 
 {
   .front_end_icons{
@@ -280,7 +257,7 @@ img{
   .Skills_section{
     margin-top: 10%;
       display: flex;
-      height: 600px;
+      height: 640px;
       background-color: rgb(43, 43, 48);
       box-shadow: 0 0 25px 11px rgb(39, 39, 39);
   }
@@ -330,7 +307,7 @@ font-size: 45px;
   font-size: 26px;
 }
 .slider .front_end_icons h2{
-  margin-top: -2%;
+  margin-top: 1%;
   margin-bottom: 4%;
   font-size: 26px;
 }
@@ -452,7 +429,7 @@ margin-top: 5%;
   .Skills_section{
     margin-top: 10%;
       display: flex;
-      height: 370px;
+      height: 380px;
       background-color: rgb(43, 43, 48);
       box-shadow: 0 0 25px 11px rgb(39, 39, 39);
   }
@@ -493,7 +470,7 @@ font-size: 9px;
 
 
 .slider h2{
-  margin-top: -4%;
+  margin-top: 4%;
   font-size: 14px;
 }
 .Courses_Certyficates .naughty
@@ -510,14 +487,16 @@ font-size: 9px;
   position: relative;
   font-size: 19px;
   padding:0px 17px 1px 17px;
-  
+  margin-top: 4px;
   margin-bottom: 2%;
 }
-
+.carousel
+{
+  height: 500px;
+}
 .slider h1{
   font-size: 28px;
-  top: -1%;
-  margin-top: 1%;
+  margin-top: 0%;
   margin-bottom: 0;
 }
 
@@ -544,7 +523,7 @@ font-size: 10px;
 }
 .Work_Experience h2
 {
-  margin-top: -11%;
+  margin-top: -2%;
 }
 .control ul
 {
