@@ -1,5 +1,5 @@
 
-
+const NavBar = document.querySelector('.navbar')
 const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarMenu = document.querySelector(".navbar ul");
 const navbarLinks = document.querySelectorAll(".navbar a, .boxArrow a");
@@ -59,3 +59,20 @@ function easeInOutCubic(t, b, c, d) {
     t -= 2;
     return c / 2 * (t * t * t + 2) + b;
 };
+
+
+////// Navbar show and hide function  /////////
+
+window.addEventListener('scroll', function () {
+    const top = this.scrollY;
+
+    if (top > 300) {
+
+        NavBar.classList.add('show');
+
+    } else {
+
+        NavBar.classList.remove('show');
+
+    };
+});
