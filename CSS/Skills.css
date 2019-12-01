@@ -173,7 +173,7 @@ margin: 0 0% 3% 15.5%;
     width: 100%;
 }
 
-/* imaga slider */
+/* image slider */
 
 .carousel ul{
     color: rgb(206, 206, 206);
@@ -205,6 +205,7 @@ img{
     background-position: center;
 }
 
+/* Animations and classes to Javascript */
 .fade{
     opacity: 0;
    animation: fadein 2s ease-in-out;
@@ -218,6 +219,7 @@ img{
   opacity: 1;
   transition: 1s;
 }
+
 @keyframes fadein
 {
     0%{opacity: 0;}
@@ -246,7 +248,9 @@ img{
   {
     bottom: -6px;
   }
-  .slider .Work_Experience,.Soft_Skills_section,.Courses_Certyficates h2{
+  .slider .Work_Experience,
+  .Soft_Skills_section,
+  .Courses_Certyficates h2{
     margin-top: -7%;
   }
   }

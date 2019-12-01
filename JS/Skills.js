@@ -10,21 +10,21 @@
 
     ////////// fading of images ///////////
 
-    const fadeIn = (image) => {
+    const fadeIn = image => {
         image.classList.add('fade');
         setTimeout(() => image.classList.remove('fade'), 800);
     }
 
     ////////// Slider of images ///////////
 
-    const changeSlide = (photoNumber) => {
+    const changeSlide = photoNumber => {
         image.src = `IMG/img${photoNumber}.jpg`;
         fadeIn(image);
     }
 
     //////////  Function to handle Arrows and dots //////////////
 
-    const handleArrows = function (target, slider, previousIndicator) {
+    const handleArrows = (target, slider, previousIndicator) => {
         const slideDirection = target.classList.contains('left') ? translateValue += 25 : translateValue -= 25;
         slider.style.transform = `translateX(${slideDirection}%)`
 
@@ -36,7 +36,7 @@
 
     //////////  Function to handle dots //////////////
 
-    const handleIndicators = function (target, slider, previousIndicator) {
+    const handleIndicators = (target, slider, previousIndicator) => {
         if (previousIndicator === target) return;
         target.classList.add('selected');
         translateValue = target.value * -25
@@ -46,7 +46,7 @@
 
     ////////// Fade effect function //////////////
 
-    const checkArrowsActivity = function (unactiveArrow) {
+    const checkArrowsActivity = unactiveArrow => {
         unactiveArrow !== null && unactiveArrow.classList.remove('unactive');
         if (translateValue === 0) {
             leftArrow.classList.add('unactive');
@@ -58,9 +58,9 @@
 
     ////////// Listener to execute functions ///////////////////
 
-    controlsContainer.addEventListener('click', function (e) {
+    controlsContainer.addEventListener('click', (e) => {
         const target = e.target.tagName === 'I' ? e.target.parentNode : e.target;
-        console.log('gdzie to robi')
+
         const previousIndicator = document.querySelector('.selected');
         const unactiveArrow = document.querySelector('.unactive');
 

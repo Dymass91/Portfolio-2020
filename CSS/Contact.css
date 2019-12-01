@@ -1,6 +1,6 @@
 @media (min-width: 360px), (max-width: 767px){
 
-.ContactSocial h2
+.Contact_Social h2
 {
   color: rgb(135, 143, 151);
     margin-top: 10%;
@@ -9,7 +9,7 @@ width: 75%;
 margin-left: 50%;
 transform: translate(-50%);
 }
-.ContactSocial h2:before
+.Contact_Social h2:before
 {
   content: '';
   position: absolute;
@@ -21,7 +21,7 @@ height: 106%;
 z-index: -1;
 
 }
-.ContactSocial h2:After
+.Contact_Social h2:After
 {
   content: '';
   position: absolute;
@@ -33,7 +33,7 @@ height: 106%;
 z-index: -2;
 
 }
-.ContactSocial p
+.Contact_Social p
 {
     margin-top: 10%;
     margin-bottom: 12%;
@@ -117,7 +117,7 @@ margin-bottom: 22px;
 
 /*  -------   Social links   --------    */
 
-.ContactSocial  ul
+.Contact_Social  ul
 {
     margin:0;
     padding: 0;
@@ -126,12 +126,12 @@ align-items: center;
 justify-content: center;
 width: 100%;
 }
-.ContactSocial  ul li {
+.Contact_Social  ul li {
     list-style: none;
     margin: 30px;
 
 }
-.ContactSocial  ul li a
+.Contact_Social  ul li a
 {
     font-size: 35px;
     width: 50px;
@@ -147,7 +147,7 @@ width: 100%;
     transition: 0.5s;
 }
 
-.ContactSocial  ul li a:before
+.Contact_Social  ul li a:before
 {
 content: '';
 position: absolute;
@@ -161,14 +161,14 @@ transition: 0.5s;
 transform: scale(0.9);
 z-index: -1;
 } 
-.ContactSocial  ul li a:hover:before
+.Contact_Social  ul li a:hover:before
 {
     transform: scale(1.15);
     transition: 0.5s;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 10px #dddddd, 0 0 40px #c5c5c5, 0 0 80px #c7c7c7;
 }
-.ContactSocial  ul li a:hover 
+.Contact_Social  ul li a:hover 
 {
     
   color: rgb(253, 253, 253);
@@ -178,18 +178,18 @@ z-index: -1;
 }
 @media (min-width: 768px)
 {
-    .ContactSocial h2
+    .Contact_Social h2
     {
         font-size: 70px;
 }
-.ContactSocial p
+.Contact_Social p
 {
   margin-top: 7%;
   margin-bottom: 5%;
     font-size: 34px;
     width: 65%;
 }
-.ContactSocial h2:before
+.Contact_Social h2:before
 {
   content: '';
   position: absolute;
@@ -201,7 +201,7 @@ height: 106%;
 z-index: -1;
 
 }
-.ContactSocial h2:After
+.Contact_Social h2:After
 {
   content: '';
   position: absolute;
@@ -212,7 +212,7 @@ height: 106%;
 z-index: -2;
 
 }
-.ContactSocial  ul li a
+.Contact_Social  ul li a
       {
           font-size: 60px;
           width: 100px;
