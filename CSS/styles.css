@@ -60,7 +60,7 @@ body {
     #box
 {
   position: absolute;
-  top: 90%;
+  top: 95%;
 }
     
     #Contact
@@ -68,4 +68,12 @@ body {
         position: absolute;
       top: 480%;
     }
+  }
+  @media (max-width: 830px) and (orientation:landscape)
+  {
+    #box
+{
+  position: absolute;
+  top: 110%;
+}
   }
