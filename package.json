@@ -1,0 +1,8 @@
+{
+    "name": "my-awesome-package",
+    "dependencies": {
+        "fontawesome": "latest",
+        "fontisto": "latest"
+    },
+    "version": "1.0.0"
+}
