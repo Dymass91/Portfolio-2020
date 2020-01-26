@@ -13,7 +13,7 @@ transform: translate(-50%);
 {
   content: '';
   position: absolute;
-  left: -5.5%;
+  left: -1.1rem;
   width: 140px;
 height: 106%;
   background: rgb(255, 255, 255);
@@ -25,7 +25,7 @@ z-index: -1;
 {
   content: '';
   position: absolute;
-  left: -10.5%;
+  left: -1.9rem;
   width: 165px;
 height: 106%;
   background: var(--main-color);
@@ -58,7 +58,7 @@ margin-bottom: 4%;
 {
  
 position: relative;
-width: 300px;
+width: 260px;
 height: 50px;
 box-sizing: border-box;
 text-align: center;
@@ -66,10 +66,12 @@ justify-items: center;
 background: darkgray;
 margin-bottom: 22px;
     box-shadow: 0 0 12px 6px rgb(102, 102, 102);
+    border-radius: 15px;
 }
 
 .Contact .box .icon
 {
+  border-radius: 5px 5px 15px 15px;
     width: 100%;
     height: 100%;
     background: var(--main-color);;
@@ -90,6 +92,7 @@ margin-bottom: 22px;
 }
 .Contact .box .details
 {
+  border-radius: 15px 15px 2px 2px;
     position: absolute;
     top: 0;
     left: 0;
@@ -115,66 +118,6 @@ margin-bottom: 22px;
     color: rgb(135, 143, 151);
 }
 
-/*  -------   Social links   --------    */
-
-.Contact_Social  ul
-{
-    margin:0;
-    padding: 0;
-    display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-}
-.Contact_Social  ul li {
-    list-style: none;
-    margin: 30px;
-
-}
-.Contact_Social  ul li a
-{
-    font-size: 35px;
-    width: 50px;
-    height: 50px;
-    line-height: 52px;
-    text-align: center;
-    margin: -12px;
-    position: relative;
-    display: block;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    color: rgb(135, 143, 151);
-    transition: 0.5s;
-}
-
-.Contact_Social  ul li a:before
-{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-border-radius: 50%;
-background: white;
-transition: 0.5s;
-transform: scale(0.9);
-z-index: -1;
-} 
-.Contact_Social  ul li a:hover:before
-{
-    transform: scale(1.15);
-    transition: 0.5s;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 0 10px #dddddd, 0 0 40px #c5c5c5, 0 0 80px #c7c7c7;
-}
-.Contact_Social  ul li a:hover 
-{
-    
-  color: rgb(253, 253, 253);
-    transition: 0.5s;
-    background: rgb(135, 143, 151);
-}
 }
 @media (min-width: 768px)
 {
@@ -185,7 +128,7 @@ z-index: -1;
 .Contact_Social p
 {
   margin-top: 7%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
     font-size: 34px;
     width: 65%;
 }
@@ -222,22 +165,22 @@ z-index: -2;
       }
       .Contact .box 
       {
-        width: 330px;
-        height: 80px;
-        margin: 30px 40px;
+        width: 300px;
+        height: 70px;
+        margin: 40px 40px;
       }
       .Contact .box .details
       {
-        transform: translateY(-80px) rotateX(90deg);
+        transform: translateY(-70px) rotateX(90deg);
       }
       .Contact .box .icon i
       {
           font-size: 2.4em;
-          line-height: 80px;
+          line-height: 70px;
       }
       .Contact .box .details h3
       {
-        line-height: 80px;
+        line-height: 70px;
       }
 }
 

@@ -4,42 +4,152 @@ footer
 {
     margin-top: 5%;
     position: relative;
+    display: flex;
     height: 70px;
     background-color: rgb(43, 43, 48);
     box-shadow: 0 0 15px 5px rgb(39, 39, 39);
+    z-index: 0;
 }
 .info
 {
+  display: flex;
 position: absolute;
     top: 50%;
-    left: 50%;
+    margin-left: 6%;
     font-weight: bold;
     font-size: 15px;
-    text-align: center;
-    width: 100%;
-    transform: translate(-50%,-50%);
-    color: rgb(135, 143, 151);
+    justify-content: flex-start;
+    width: 48%;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
 }
 .info span
 {
   color: rgb(140, 206, 247);
   font-size: 15px;
   font-weight: bold;
+
 }
+/*  -------   Social links   --------    */
+
+footer  ul
+{
+  margin-right: 1.5%;
+    padding: 0;
+    display: flex;
+align-items: center;
+justify-content: flex-end;
+
+width: 100%;
+}
+footer  ul li {
+    list-style: none;
+    margin: 10px;
+
+}
+footer  ul li a
+{
+    font-size: 25px;
+    width: 31px;
+    height: 31px;
+    line-height: 33px;
+    text-align: center;
+    position: relative;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    color:  rgb(43, 43, 48);
+    transition: 0.5s;
+}
+
+footer  ul li a:before
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: white;
+transition: 0.5s;
+transform: scale(0.9);
+z-index: -1;
+} 
+footer  ul li a:hover:before
+{
+    transform: scale(1.15);
+    transition: 0.5s;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #dddddd, 0 0 10px #c5c5c5, 0 0 20px #c7c7c7;
+}
+footer  ul li a:hover 
+{
+    
+  color: rgb(253, 253, 253);
+    transition: 0.5s;
+    background:  rgb(43, 43, 48);
+}
+
 }
 @media (min-width: 768px)
 {
   footer
   {
       height: 100px;
+      margin-top: 5%;
+      position: relative;
+      display: flex;
+      background-color: rgb(43, 43, 48);
+      box-shadow: 0 0 15px 5px rgb(39, 39, 39);
+      z-index: 0;
   }
   .info
   {
       font-size: 25px;
+      display: flex;
+  max-width: 100%;
+  min-width: 88%;    
+          font-weight: bold;
+          justify-content: center;    
   }
-  .info span
+
+  footer  ul
   {
-    font-size: 25px;
+    margin-right: 1%;
+  }
+  footer  ul li a
+  {
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    line-height: 52px;
   }
     }
-}
+
+
+@media (min-width: 360px), (max-width: 767px){
+
+  
+  }
+  @media (min-width: 768px)
+  {
+    footer
+    {
+        height: 100px;
+    }
+    .info
+    {
+        font-size: 25px;
+    }
+    .info span
+    {
+      font-size: 25px;
+    }
+  
+  }
+  
+  @media (max-width: 830px) and (orientation:landscape)
+  {
+   
+  }

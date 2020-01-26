@@ -66,8 +66,9 @@ top: 35%;
     list-style: none;
     display: flex;
     position: absolute;
+    align-items: center;
     bottom: 34%;
-    left: 50%;
+    left: 48%;
     padding: 0;
     transform: translate(-50%);
     z-index: 2;
@@ -79,7 +80,6 @@ top: 35%;
     border: 2px solid var(--span-color);
     border-radius: 50px;
     margin: 0 0 24px 18px;
-
   }
   .control ul li.selected {
     transition: 0.5s;
@@ -93,7 +93,6 @@ top: 35%;
 
 .front_end_icons{
     display: flex;
-    width: 88%;
     margin-top: 8%;
     flex-wrap: wrap;
     align-items: flex-start;
