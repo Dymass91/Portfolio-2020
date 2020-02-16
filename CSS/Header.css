@@ -13,6 +13,7 @@ header{
   height: 100vh;
   overflow: hidden;
   background-color: rgb(135, 143, 151);
+  animation: linear 1s animate1;
 }
 
 .header__backgroung #bg {
@@ -99,7 +100,7 @@ background-repeat: no-repeat;
  {
   0%
   {
-  
+  background-color: white;
    opacity: 0;
   }
   100%
