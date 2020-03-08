@@ -65,7 +65,7 @@ text-align: center;
 justify-items: center;
 background: darkgray;
 margin-bottom: 22px;
-    box-shadow: 0 0 12px 6px rgb(102, 102, 102);
+    box-shadow: 0 5px 19px 5px rgb(102, 102, 102);
     border-radius: 15px;
 }
 
@@ -74,11 +74,13 @@ margin-bottom: 22px;
   border-radius: 5px 5px 15px 15px;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom right, var(--main-color), rgb(204, 226, 236));
+    background-image: linear-gradient( var(--main-color) , rgba(0, 133, 185, 0.829));
     transition: 0.8s;
     transform-origin: top;
     transform: translateY(0) rotateX(0deg);
 }
+
+
 .Contact .box:hover .icon
 {
     transform: translateY(100%) rotateX(90deg);   
